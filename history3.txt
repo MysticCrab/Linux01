@@ -1,0 +1,22 @@
+   0 > hwork.txt
+   1 date +'%D'
+   2 date +'%D' >> hwork.txt 
+   3 df -h
+   4 df -h | grep /dev/root | awk '{print $3}' >> hwork.txt 
+   5 cat hwork.txt 
+   6 ls -l
+   7 history | tail -5 >> hwork.txt 
+   8 cat /proc/cpuinfo | grep vendor
+   9 cat /proc/cpuinfo | grep vendor >> hwork.txt 
+  10 vi hwork.txt 
+  11 ps -ef
+  12 awk
+  13 wc --help
+  14 ps -ef | wc -l
+  15 ps -ef | grep root | wc -l
+  16 ps -ef | grep root
+  17 ps -ef | grep root | wc -l >> hwork.txt 
+  18 export_file hwork.txt  
+  19 history > history(3).txt | export_file history(3).txt
+  20 history > history(3).txt
+  21 history > history3.txt | export_file history3.txt
