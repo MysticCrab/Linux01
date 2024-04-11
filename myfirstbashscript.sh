@@ -1,5 +1,6 @@
 #!/bin/bash
 date
+USER=Jurek
 echo "hello" $USER "!"
 pwd
 ps -f | grep root | wc -l
