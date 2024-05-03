@@ -1,0 +1,15 @@
+#!/bin/bash
+set -e
+mkdir -p /opt/200224_morning/jurek/test
+
+        for i in {1..3}
+        do
+        mkdir -p /opt/200224_morning/jurek/test/DIR0$i
+        done
+
+echo "Let's GO" >> /opt/200224_morning/jurek/test/myfile.txt
+cat /var/spool/mail/ec2-user | grep cron >> /opt/200224_morning/jurek/test/myfile.txt
+>  /opt/200224_morning/jurek/test/DIR01/1.txt
+ps -ef > /opt/200224_morning/jurek/test/DIR02/processes
+echo "DONE" >  /opt/200224_morning/jurek/test/DIR03/DONE
+echo $JUREK >>  /opt/200224_morning/jurek/test/myfile.txt
